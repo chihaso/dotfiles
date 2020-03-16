@@ -1,0 +1,7 @@
+[alias]
+	co = checkout
+	push-f = push --force-with-lease
+  commit = commit --author="chihaso <cycyccq@gmail.com>"
+[user]
+	name = chihaso
+	email = cycyccq@gmail.com
