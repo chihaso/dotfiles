@@ -4,6 +4,7 @@
   commit = commit --author="chihaso <cycyccq@gmail.com>"
 	s = status
 	prom = pull --rebase origin master
+  b = branch
 [user]
 	name = chihaso
 	email = cycyccq@gmail.com
