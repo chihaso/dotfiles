@@ -69,27 +69,27 @@ endif
 
 " if dein#load_state('~/.cache/dein')
 "   call dein#begin('~/.cache/dein')
-" 
+"
 "   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 "   call dein#add('Shougo/deoplete.nvim')
 "   if !has('nvim')
 "     call dein#add('roxma/nvim-yarp')
 "     call dein#add('roxma/vim-hug-neovim-rpc')
 "   endif
-" 
+"
 "   " tomlファイル（使用するプラグインのリストが記述されているファイル）の場所を指定
 "   let g:rc_dir = expand('~/.cache/dein') "<- dein.toml dein_lazy.toml を読み込むディレクトリ ##########
 "   let s:toml = g:rc_dir . '/dein.toml'
 "   " let s:lazy_toml = g:rc_dir . '/dein_lazy.toml' "<- dein_lazy.toml を使う場合はコメント解除 ##########
-"   
+"
 "   " tomlファイルを読み込む
 "   call dein#load_toml(s:toml, {'lazy': 0})
 "   " call dein#load_toml(s:lazy_toml, {'lazy': 1}) "<- dein_lazy.toml を使う場合はコメント解除 ##########
-"  
+"
 "   let g:ale_fixers = {
 "   \   'ruby': ['rubocop'],
-"   \} 
-" 
+"   \}
+"
 "   call dein#end()
 "   call dein#save_state()
 " endif
