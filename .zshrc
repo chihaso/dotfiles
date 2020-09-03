@@ -6,4 +6,10 @@ eval "$(rbenv init -)"
 export LSCOLORS=cxfxcxdxbxegedabagacad
 alias ls='ls -FG'
 alias less='less -Mr'
-export PATH=$PATH:/Users/chibayuta/.nodebrew/current/bin
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
+export CMS_HOST="localhost"
+export CMS_PORT=8080
