@@ -8,3 +8,8 @@
 [user]
 	name = chihaso
 	email = cycyccq@gmail.com
+[init]
+	defaultBranch = main
+[core]
+  excludesfile = ~/.gitignore
+
