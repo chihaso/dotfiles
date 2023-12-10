@@ -12,4 +12,3 @@
 	defaultBranch = main
 [core]
   excludesfile = ~/.gitignore
-
