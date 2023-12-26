@@ -44,3 +44,4 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
    fi
    eval `cat $HOME/.ssh/ssh-agent`
 fi
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
