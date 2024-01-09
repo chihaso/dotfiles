@@ -45,3 +45,9 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
    eval `cat $HOME/.ssh/ssh-agent`
 fi
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/yuta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yuta/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/yuta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yuta/google-cloud-sdk/completion.zsh.inc'; fi
