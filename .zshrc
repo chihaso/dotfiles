@@ -51,3 +51,6 @@ if [ -f '/Users/yuta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yuta/googl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/yuta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yuta/google-cloud-sdk/completion.zsh.inc'; fi
+
+# https://zenn.dev/yukionodera/articles/how-to-fix-error-mysql2
+export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
