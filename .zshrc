@@ -1,4 +1,15 @@
-PROMPT='%F{cyan}%D %*%f %F{cyan}%n@%m:%~%f
+# gitのブランチ名表示など
+# https://bottoms-programming.com/archives/mac-terminal-to-iterm2.html#toc15
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{magenta}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{yellow}+"
+zstyle ':vcs_info:*' formats "%F{yellow}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+
+PROMPT='%F{cyan}%D %*%f %F{cyan}%n@%m:%~%f%F{yellow}$vcs_info_msg_0_%f
 %# '
 
 eval "$(rbenv init -)"
