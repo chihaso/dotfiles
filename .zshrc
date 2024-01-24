@@ -12,7 +12,7 @@ precmd () { vcs_info }
 PROMPT='%F{cyan}%D %*%f %F{cyan}%n@%m:%~%f%F{yellow}$vcs_info_msg_0_%f
 %# '
 
-eval "$(rbenv init -)"
+eval "$(/opt/homebrew/bin/rbenv init - zsh)"
 
 export LSCOLORS=cxfxcxdxbxegedabagacad
 alias ls='ls -FG'
