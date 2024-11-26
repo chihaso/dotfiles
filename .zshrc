@@ -65,3 +65,7 @@ if [ -f '/Users/yuta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yuta
 
 # https://zenn.dev/yukionodera/articles/how-to-fix-error-mysql2
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
+
+# https://github.com/jonmosco/kube-ps1
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+  PS1='$(kube_ps1)'$PS1
